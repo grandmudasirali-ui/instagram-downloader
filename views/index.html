@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InstaGrab — Instagram Photo, Video & Reels Downloader</title>
+<meta name="description" content="Download Instagram photos, carousel/album posts, videos, and Reels in one place — free, fast, full quality, no login required.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="bg-glow" aria-hidden="true"></div>
+
+<nav class="navbar">
+  <div class="logo">
+    <span class="logo-ring">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="20" height="20" rx="6" stroke="white" stroke-width="1.8"/>
+        <circle cx="12" cy="12" r="4.6" stroke="white" stroke-width="1.8"/>
+        <circle cx="17.2" cy="6.8" r="1.1" fill="white"/>
+      </svg>
+    </span>
+    Insta<span>Grab</span>
+  </div>
+  <div class="nav-tag">Photos · Reels · Videos</div>
+</nav>
+
+<section class="hero">
+  <span class="pill">One tool for everything Instagram</span>
+  <h1>Download any <span class="grad">Instagram</span> post</h1>
+  <p>Paste a link to a photo, carousel/album, video, or Reel — InstaGrab figures out what it is and gets it for you in full quality.</p>
+</section>
+
+<div class="download-box">
+  <div class="type-tabs" id="type-tabs">
+    <button type="button" class="type-tab active" data-hint="Works for photos, carousels, videos &amp; Reels — just paste any link">
+      <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5zm2 0v14h12V5H6zm2.5 3.5A1.5 1.5 0 1 1 7 10a1.5 1.5 0 0 1 1.5-1.5zM7 17l3.5-4.5 2.5 3L16 12l3 5H7z"/></svg>
+      Any Link
+    </button>
+  </div>
+  <form id="dl-form">
+    <div class="input-row">
+      <input type="text" id="insta-url" placeholder="Paste Instagram link here..." autocomplete="off" inputmode="url">
+      <button type="button" id="paste-btn" class="dl-btn">Paste</button>
+      <button type="submit" id="dl-btn" class="btn-download">
+        <span class="btn-label">Download</span>
+      </button>
+    </div>
+  </form>
+  <div id="status-msg" class="status-msg"></div>
+</div>
+
+<div id="result" class="result"></div>
+
+<section class="features">
+  <div class="feature-card">
+    <div class="feature-icon">✨</div>
+    <h4>Everything, One Place</h4>
+    <p>Photos, carousels/albums, videos, and Reels — no more switching between separate tools.</p>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon">🖼️</div>
+    <h4>Full Resolution</h4>
+    <p>Every photo and video is fetched at the original quality Instagram serves — no crops, no compression.</p>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon">🔓</div>
+    <h4>No Login Needed</h4>
+    <p>Works on public posts straight away. Only add a session cookie if a specific link needs it.</p>
+  </div>
+</section>
+
+<section class="how-to">
+  <h2>How it works</h2>
+  <ol>
+    <li>Open the Instagram post, Reel, or video you want to save.</li>
+    <li>Tap the three dots (⋯) or "Share" and choose "Copy Link".</li>
+    <li>Paste the link above and hit "Download".</li>
+    <li>Save the photo/video — or "Download All" for a full carousel.</li>
+  </ol>
+</section>
+
+<footer>
+  &copy; 2026 InstaGrab. Not affiliated with Instagram/Meta. For public posts, personal use only.
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>

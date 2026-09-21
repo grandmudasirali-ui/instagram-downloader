@@ -1,0 +1,20 @@
+{
+  "name": "instagram-downloader",
+  "version": "2.0.0",
+  "description": "All-in-one Instagram downloader — photos, carousels/albums, videos and Reels, all in one tool. Primary extraction uses Instagram's own internal API directly (fast, no browser needed); an optional headless-Chrome fallback kicks in automatically for tricky/login-walled posts if Google Chrome or Edge is installed.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "qs": "^6.13.0",
+    "puppeteer-core": "^22.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
