@@ -3,11 +3,92 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>InstaGrab — Instagram Photo, Video & Reels Downloader</title>
-<meta name="description" content="Download Instagram photos, carousel/album posts, videos, and Reels in one place — free, fast, full quality, no login required.">
+
+<!-- ===== Primary SEO ===== -->
+<title>InstaGrab — Download Instagram Photos, Videos &amp; Reels (Free, Full Quality)</title>
+<meta name="description" content="Download Instagram photos, carousels/albums, videos, and Reels for free — full original quality, no login, no watermark, no app install. Paste a link and save in seconds.">
+<meta name="keywords" content="instagram downloader, download instagram video, download instagram photo, download instagram reel, instagram carousel downloader, save instagram post, instagram video download no watermark">
+<meta name="robots" content="index, follow">
+<meta name="author" content="InstaGrab">
+<link rel="canonical" href="https://yourdomain.com/">
+
+<!-- ===== Open Graph ===== -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="InstaGrab">
+<meta property="og:title" content="InstaGrab — Download Instagram Photos, Videos & Reels">
+<meta property="og:description" content="Free tool to download Instagram photos, carousels, videos, and Reels in full quality. No login, no watermark, no app needed.">
+<meta property="og:url" content="https://yourdomain.com/">
+<meta property="og:image" content="https://yourdomain.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+
+<!-- ===== Twitter Card ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="InstaGrab — Download Instagram Photos, Videos & Reels">
+<meta name="twitter:description" content="Free tool to download Instagram photos, carousels, videos, and Reels in full quality. No login, no watermark, no app needed.">
+<meta name="twitter:image" content="https://yourdomain.com/og-image.png">
+
+<meta name="theme-color" content="#120e17">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='2' y='2' width='20' height='20' rx='6' fill='%23d6249f'/%3E%3Ccircle cx='12' cy='12' r='4.6' fill='none' stroke='white' stroke-width='1.8'/%3E%3Ccircle cx='17.2' cy='6.8' r='1.1' fill='white'/%3E%3C/svg%3E">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="/style.css">
+
+<!-- ===== Structured data: SoftwareApplication ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "InstaGrab",
+  "url": "https://yourdomain.com/",
+  "description": "Free web tool to download Instagram photos, carousels/albums, videos, and Reels in full original quality without logging in.",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Any (Web-based)",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+<!-- ===== Structured data: FAQPage ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is it free to download Instagram photos and videos with InstaGrab?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. InstaGrab is completely free to use, with no sign-up and no limit on how many posts you can download." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to log in to my Instagram account to use InstaGrab?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Public photos, carousels, videos, and Reels can be downloaded without logging in. A login is only needed for the rare private or restricted post." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will the downloaded video or photo have a watermark?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. InstaGrab fetches the original media file Instagram itself serves, so there is no added watermark or quality loss." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I download an entire Instagram carousel or album at once?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Paste the link to a multi-photo or multi-video carousel post and InstaGrab will show every slide with a Download All option." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it legal to download Instagram content?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Saving a public post for personal use is generally fine, but the content still belongs to its original creator. Don't re-upload, resell, or claim someone else's photo or video as your own." }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -16,7 +97,7 @@
 <nav class="navbar">
   <div class="logo">
     <span class="logo-ring">
-      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <rect x="2" y="2" width="20" height="20" rx="6" stroke="white" stroke-width="1.8"/>
         <circle cx="12" cy="12" r="4.6" stroke="white" stroke-width="1.8"/>
         <circle cx="17.2" cy="6.8" r="1.1" fill="white"/>
@@ -29,58 +110,122 @@
 
 <section class="hero">
   <span class="pill">One tool for everything Instagram</span>
-  <h1>Download any <span class="grad">Instagram</span> post</h1>
+  <h1>Download any <span class="glitch-word" id="glitch-word">Instagram</span> post</h1>
   <p>Paste a link to a photo, carousel/album, video, or Reel — InstaGrab figures out what it is and gets it for you in full quality.</p>
 </section>
 
 <div class="download-box">
   <div class="type-tabs" id="type-tabs">
     <button type="button" class="type-tab active" data-hint="Works for photos, carousels, videos &amp; Reels — just paste any link">
-      <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5zm2 0v14h12V5H6zm2.5 3.5A1.5 1.5 0 1 1 7 10a1.5 1.5 0 0 1 1.5-1.5zM7 17l3.5-4.5 2.5 3L16 12l3 5H7z"/></svg>
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5zm2 0v14h12V5H6zm2.5 3.5A1.5 1.5 0 1 1 7 10a1.5 1.5 0 0 1 1.5-1.5zM7 17l3.5-4.5 2.5 3L16 12l3 5H7z"/></svg>
       Any Link
     </button>
   </div>
   <form id="dl-form">
     <div class="input-row">
-      <input type="text" id="insta-url" placeholder="Paste Instagram link here..." autocomplete="off" inputmode="url">
+      <input type="text" id="insta-url" placeholder="Paste Instagram link here..." autocomplete="off" inputmode="url" aria-label="Instagram post link">
       <button type="button" id="paste-btn" class="dl-btn">Paste</button>
       <button type="submit" id="dl-btn" class="btn-download">
         <span class="btn-label">Download</span>
       </button>
     </div>
   </form>
-  <div id="status-msg" class="status-msg"></div>
+  <div id="status-msg" class="status-msg" role="status" aria-live="polite"></div>
 </div>
 
 <div id="result" class="result"></div>
 
-<section class="features">
-  <div class="feature-card">
-    <div class="feature-icon">✨</div>
-    <h4>Everything, One Place</h4>
-    <p>Photos, carousels/albums, videos, and Reels — no more switching between separate tools.</p>
+<section class="features" aria-label="Why use InstaGrab">
+  <div class="feature-row">
+    <span class="feature-num">01</span>
+    <div>
+      <h4>Everything, one place</h4>
+      <p>Photos, carousels/albums, videos, and Reels — no more switching between separate tools for each format.</p>
+    </div>
   </div>
-  <div class="feature-card">
-    <div class="feature-icon">🖼️</div>
-    <h4>Full Resolution</h4>
-    <p>Every photo and video is fetched at the original quality Instagram serves — no crops, no compression.</p>
+  <div class="feature-row">
+    <span class="feature-num">02</span>
+    <div>
+      <h4>Full resolution</h4>
+      <p>Every photo and video is fetched at the original quality Instagram serves internally — no crops, no re-compression.</p>
+    </div>
   </div>
-  <div class="feature-card">
-    <div class="feature-icon">🔓</div>
-    <h4>No Login Needed</h4>
-    <p>Works on public posts straight away. Only add a session cookie if a specific link needs it.</p>
+  <div class="feature-row">
+    <span class="feature-num">03</span>
+    <div>
+      <h4>No login needed</h4>
+      <p>Public posts work straight away. A session cookie is only ever needed for a link that Instagram itself has restricted.</p>
+    </div>
   </div>
 </section>
 
-<section class="how-to">
+<section class="how-to" aria-label="How it works">
   <h2>How it works</h2>
   <ol>
-    <li>Open the Instagram post, Reel, or video you want to save.</li>
-    <li>Tap the three dots (⋯) or "Share" and choose "Copy Link".</li>
-    <li>Paste the link above and hit "Download".</li>
-    <li>Save the photo/video — or "Download All" for a full carousel.</li>
+    <li><span class="step-no">1</span><span>Open the Instagram post, Reel, or video you want to save.</span></li>
+    <li><span class="step-no">2</span><span>Tap the three dots (⋯) or "Share" and choose "Copy Link".</span></li>
+    <li><span class="step-no">3</span><span>Paste the link above and hit "Download".</span></li>
+    <li><span class="step-no">4</span><span>Save the photo/video — or "Download All" for a full carousel.</span></li>
   </ol>
 </section>
+
+<article class="guide" aria-labelledby="guide-heading">
+  <div class="guide-inner">
+    <p class="guide-eyebrow">Guide</p>
+    <h2 id="guide-heading">How to save Instagram photos, videos and Reels — the full guide</h2>
+
+    <p class="lede">Instagram gives you no built-in way to save a post you don't own, which is exactly why tools like InstaGrab exist. Here's what actually works, why it works, and what to keep in mind before you download anything.</p>
+
+    <h3>Why people download Instagram content</h3>
+    <p>Most of the time it's simple: a friend posted a video from a trip and you want it on your own phone, a business wants to reuse its own Reel in an ad, or you found a carousel of reference photos for a project. Instagram is built for scrolling and reacting in the app, not for taking things with you — downloading fills that gap.</p>
+
+    <h3>Step-by-step: downloading any post</h3>
+    <p>The process is the same regardless of whether the link points to a photo, a video, or a Reel:</p>
+    <ol class="guide-steps">
+      <li>Open the post inside the Instagram app or on instagram.com.</li>
+      <li>Tap the three dots above the post (or the paper-plane "Share" icon) and choose <strong>Copy Link</strong>.</li>
+      <li>Paste that link into the box at the top of this page.</li>
+      <li>InstaGrab reads the link, works out whether it's a photo, carousel, video, or Reel, and shows a preview with a download button.</li>
+    </ol>
+
+    <h3>Carousels and photo albums</h3>
+    <p>A carousel post is really several photos or videos bundled behind one link. When InstaGrab detects one, it lays out every slide individually with its own save link, plus a single <strong>Download All</strong> button so you don't have to save each slide one at a time. Video slides inside a carousel are marked so you can tell them apart from photos before downloading.</p>
+
+    <h3>Reels and videos in full quality</h3>
+    <p>Reels and feed videos are fetched from the same source Instagram's own web player uses, so the file you get is the same resolution and bitrate as the original upload — not a re-encoded or watermarked copy. There's nothing extra to configure; paste the link and the correct format is detected automatically.</p>
+
+    <div class="pull-note">
+      <p>If a link ever fails with a message about logging in, it usually means the account or post has extra privacy restrictions Instagram applies at random to some content — this is rare for public accounts and isn't something InstaGrab can bypass by design.</p>
+    </div>
+
+    <h3>Is it legal and safe to download Instagram content?</h3>
+    <p>Saving a public post to your own device for personal use — rewatching it, keeping a copy of something you were tagged in, archiving your own content — is generally not a problem. What matters is what you do with it afterward: reposting someone else's photo or video as your own, or using it commercially without permission, can run into copyright issues regardless of which tool you used to save it. When in doubt, ask the original creator or credit them clearly.</p>
+
+    <h3>Frequently asked questions</h3>
+    <div class="faq-list">
+      <details>
+        <summary>Is it free to download Instagram photos and videos with InstaGrab?</summary>
+        <p>Yes. InstaGrab is completely free to use, with no sign-up and no limit on how many posts you can download.</p>
+      </details>
+      <details>
+        <summary>Do I need to log in to my Instagram account?</summary>
+        <p>No. Public photos, carousels, videos, and Reels can be downloaded without logging in. A login is only needed for the rare private or restricted post.</p>
+      </details>
+      <details>
+        <summary>Will the downloaded file have a watermark?</summary>
+        <p>No. InstaGrab fetches the original media file Instagram itself serves, so there's no added watermark or quality loss.</p>
+      </details>
+      <details>
+        <summary>Can I download a whole carousel or album at once?</summary>
+        <p>Yes. Paste the link to a multi-photo or multi-video carousel post and InstaGrab will show every slide with a Download All option.</p>
+      </details>
+      <details>
+        <summary>Is downloading Instagram content legal?</summary>
+        <p>Saving a public post for personal use is generally fine, but the content still belongs to its original creator. Don't re-upload, resell, or claim someone else's photo or video as your own.</p>
+      </details>
+    </div>
+  </div>
+</article>
 
 <footer>
   &copy; 2026 InstaGrab. Not affiliated with Instagram/Meta. For public posts, personal use only.

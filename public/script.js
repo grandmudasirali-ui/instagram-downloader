@@ -207,3 +207,19 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>`;
   }
 });
+
+// ---------- Title glitch effect ----------
+(function () {
+  const word = document.getElementById("glitch-word");
+  if (!word) return;
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion) return;
+
+  function fireGlitch() {
+    word.classList.add("glitching");
+    setTimeout(() => word.classList.remove("glitching"), 600);
+  }
+
+  setTimeout(fireGlitch, 5000);   // first glitch at 5s, as requested
+  setInterval(fireGlitch, 11000); // then a brief flicker every ~11s
+})();
