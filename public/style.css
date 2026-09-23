@@ -725,21 +725,56 @@ footer {
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 680px) {
+  .navbar {
+    padding: 16px 5vw;
+  }
+  .nav-tag {
+    display: none;
+  }
+  .hero {
+    padding: 44px 5vw 20px;
+  }
   .input-row {
     flex-wrap: wrap;
-    border-radius: 24px;
+    border-radius: 22px;
+    gap: 6px;
   }
   .input-row input {
-    border-radius: 22px 22px 0 0;
+    flex: 1 1 100%;
     width: 100%;
+    border-radius: 18px;
+    font-size: 16px;
   }
   .input-row #paste-btn {
-    border-radius: 0 0 0 22px;
     flex: 1;
+    border-radius: 16px;
+    padding: 12px 10px;
   }
   .btn-download {
-    border-radius: 0 0 22px 0;
-    flex: 1;
+    flex: 2;
+    border-radius: 16px;
+  }
+  .features,
+  .how-to,
+  .guide {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .feature-row p {
+    max-width: none;
+  }
+  .guide h2 {
+    max-width: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .type-tab {
+    padding: 7px 12px;
+    font-size: 0.8rem;
+  }
+  .logo {
+    font-size: 1.1rem;
   }
 }
